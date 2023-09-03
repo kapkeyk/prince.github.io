@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=Oswald:wght@300&family=Poppins:wght@700&family=Roboto:ital,wght@1,100&family=Teko:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Prince's Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="mother-nav" id="mother_navigation">
+            <div class="logo">
+                <a href="home.php">- prince -</a>
+            </div>
+            <div class="nav-container">
+                <nav>
+                    <ul>
+                        <li><a href="#mother_container" id="profile">Profile</a></li>
+                        <li><a href="#works_experiences" id="works-experiences">Works Experiences</a></li>
+                        <li><a href="#educ" id="education">Education</a></li>
+                        <li><a href="#trainings_certs" id="trainings&certificates">Trainings & Certificates</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+<script>
+// JavaScript for marking the active navigation button and enabling smooth scrolling
+document.addEventListener("DOMContentLoaded", function () {
+    var navLinks = document.querySelectorAll(".nav-container a");
+    var currentPage = window.location.href; // Get the current page URL
+
+    // Add a click event listener to each navigation item
+    navLinks.forEach(function (link) {
+        link.addEventListener("click", function (e) {
+            e.preventDefault(); // Prevent the default jump to the anchor link
+
+            // Remove the 'active' class from all navigation items
+            navLinks.forEach(function (navLink) {
+                navLink.classList.remove("active");
+            });
+
+            // Add the 'active' class to the clicked navigation item
+            this.classList.add("active");
+
+            // Scroll to the target section smoothly
+            var targetId = this.getAttribute("href").substring(1); // Get the target section's ID
+            var targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: "smooth" // Smooth scrolling
+                });
+            }
+        });
+
+        // Check if the link's href matches the current page URL
+        if (link.href === currentPage) {
+            link.classList.add("active"); // Add 'active' class if it matches
+        }
+    });
+});
+
+
+</script>
+    <div  id="mother_container"></div>
+    <div class="mother-container" id="mother_container">
+        <div class="mother-homepage">
+            <div class="one-homepage">
+                <img src="idpic.jpg" alt="me" class="ID-pic">
+                <hr class="separator">
+                <ul class="credentials">
+                    <li><strong>Name:</strong> Tero, Prince Carlo V (Kap Keyk)</li>
+                    <li><strong>Birthday:</strong> June 10, 2000</li>
+                    <li>An aspiring Web Developer</li>
+                </ul>
+                <hr class="separator">
+                <div class="approach-icon">
+                    <i class="fas fa-envelope"><p> - kkeyk018@gmail.com</p></i> <!-- Email icon -->
+                    <i class="fas fa-phone"><p> - 09062654183</p></i> <!-- Telephone icon -->
+                    <i class="fab fa-facebook"><p><a href="https://web.facebook.com/Kkeyk020/"> - Kkeyk020</a></p></i> <!-- Facebook icon -->
+                    <i class="fas fa-map-marker-alt"><p> - Sta. Mesa, Manila</p></i> <!-- Pinned address icon -->
+                </div>
+                <hr class="separator">
+                <div class="objectives">
+                    <h1>Objectives:</h1>
+                    <p>
+                    Capable of basic front-end and back-end <br>programming, animation and possesses <br>exceptional organizational skills. Ready <br>to work hard and learn on the job.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="two-homepage">
+                <h1>Skills & Abilities</h1>
+                <div class="skill-scale">
+                    <h2>Programming Language</h2>
+                    <div class="my-skill-1">C Language -</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 50%;">50%</div>
+                    </div>
+                    <div class="my-skill-1">C-Sharp -</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 40%;">40%</div>
+                    </div>
+                    <div class="my-skill-1">PHP -</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 30%;">30%</div>
+                    </div>
+                    <div class="my-skill-1">Javascript -</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 20%;">20%</div>
+                    </div>
+                </div>
+                
+                <div class="script-scale">
+                    <h2>Scripting, Designing & Mark-Up Language</h2>
+                    <div class="my-skill-1">HTML -</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 70%;">70%</div>
+                    </div>
+                    <div class="my-skill-1">CSS -</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 60%;">60%</div>
+                    </div>
+                    <div class="my-skill-1">Photoshop -</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 50%;">50%</div>
+                    </div>
+                    <div class="my-skill-1">Database -</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 30%;">30%</div>
+                    </div>
+                </div> <!-- script-scale-->
+            </div>
+        </div>
+    </div><!-- Mother Container End DIV -->
+
+    <div  id="works_experiences"></div>
+    <div></div>
+    <div class="child1-container">  
+        <h1>Works Experiences</h1>  
+        <div class="works-experiences">
+            <div class="golden-arches">
+                <h2>GOLDEN ARCHES DEVELOPMENT CORPORATION</h2>
+                <hr class="child1-separator">
+                <p>MAY 9, 2019 - October 24, 2021</p>
+                <p>Greenhills, San Juan City, Metro Manila</p>
+                <p>Position: <strong>SERVICE CREW</strong></p>
+            </div>
+            <div class="VPLACE-PHARMACY">
+                <h2>VPLACE PHARMA LABORATORY</h2>
+                <hr class="child1-separator">
+                <p>May - April 2017</p>
+                <p>140 Pancho Villa St, Brgy Corazon De Jesus, San Juan City, Metro Manila</p>
+                <p>Position: <strong>PORTER</strong></p>
+            </div>
+            <div class="Concentrix">
+                <h2>CONCENTRIX</h2>
+                <hr class="child1-separator">
+                <p>October 27, 2021 - January 4, 2022</p>
+                <p>WCC Shaw Centre Mall, Shaw Blvd., Mandaluyong City, Metro Manila</p>
+                <p>Position: <strong>CUSTOMER ASSOCIATE</strong></p>
+            </div>
+            <div class="Foodpanda">
+                <h2>FOODPANDA</h2>
+                <hr class="child1-separator">
+                <p>April 21, 2022 - Current</p>
+                <p>San Juan City, Metro Manila</p>
+                <p>Position: <strong>DELIVERY RIDER</strong></p>
+            </div>
+        </div> <!-- works-experiences end div -->
+    </div> <!-- child1-container END DIV -->
+
+    <div  id="educ"></div>
+    <div class="child2-container">
+        <div class="educ-container">
+            <h1>Education</h1>
+            <div class="educ-box">
+            <div class="tertiary">
+                <h2>TERTIARY</h2>
+                <h3>POLYTECHNIC UNIVERSITY OF THE PHILIPPINES - SAN JUAN</h3>
+                <p>San Juan City, Metro Manila</p>
+                <p>A.Y.2019 - Current</p>
+            </div>
+            <div class="senior">
+                <h2>SENIOR HIGH</h2>
+                <h3>SAN JUAN NATIONAL SENIOR HIGHSCHOOL</h3>
+                <p>San Juan City, Metro Manila</p>
+                <p>S.Y.2017 - S.Y.2019</p>
+            </div>
+            <div class="junior">
+                <h2>HIGHSCHOOL</h2>
+                <h3>SAN JUAN NATIONAL HIGH SCHOOL</h3>
+                <p>San Juan City, Metro Manila</p>
+                <p>S.Y.2013 - S.Y.2017</p>
+            </div>
+            <div class="primary">
+                <h2>PRIMARY</h2>
+                <h3>PARAISO ELEMENTARY SCHOOL</h3>
+                <p>Paraiso, Mabini, Bohol</p>
+                <p>S.Y.2007 - S.Y.2013</p>
+            </div>
+            </div> <!-- educ-box--->
+        </div> <!-- educ-con div ends here -->
+    </div><!-- educ div ends here -->
+
+    <div id="trainings_certs"></div>
+    <div class="child3-container">
+        <div class="train_cert">
+            <h1>Trainings & Certificates</h1>
+            <div class="train_cert-box">
+                <div class="train">
+                    <h2 class="train-h2">SPECIALIZED TRAININGS</h2>
+                    <h3 class="train-h3">WEBINARS</h3>
+                    <div class="specialized">
+                    <div class="web-con">
+                        <h4>Introduction to Email Threats and Security Attacks</h4>
+                        <p>Trend Micro, Miguel Ang</p>
+                        <p>November 19, 2020</p>
+                    </div>
+                    <div class="web-con">
+                        <h4>Introduction to Malware Threats</h4>
+                        <p>Trend Micro, Raphael Corteno</p>
+                        <p>October 22, 2020</p>
+                    </div>
+                    </div> <!-- sepecialized -->
+                </div>
+                <div class="cert">
+                <h3 class="cert-h3">CERTIFICATES</h3>
+                    <div class="cert-box">
+                    <h4 class="cert-h4">NATIONAL CERTIFICATE II</h4>
+                    <h5 class="cert-h5">Technical Education and Skills Development Authority</h5>
+                    <p>Issued: December 13, 2018</p>
+                    <p>Expires: December 12, 2023</p>
+                    <p>Relevant Skills: Illustration & Animation</p>
+                </div>
+                </div>
+            </div>
+        </div><!-- TRAIN CERT DIV END-->
+    </div> <!-- CHILD3-CON DIV END -->
+</body>
+</html>
